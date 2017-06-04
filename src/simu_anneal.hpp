@@ -16,6 +16,7 @@ int ld_rand(int mod) {
     return rand() % mod;
 }
 
+//We can ignore
 void next_state(vector<vessel_info> &viv, int shift) {
     int len = viv.size();
     int u = shift + ld_rand(len - shift), v = shift + ld_rand(len - shift);
@@ -27,7 +28,7 @@ void next_state(vector<vessel_info> &viv, int shift) {
 }
 
 sol_info simu_anneal(vector<vessel_info> viv, size_t max_berth, size_t max_time,
-                     int shift = 1, double init_temp = 2.3, double fall_exp = 0.999,
+                     int shift = 0, double init_temp = 2.3e3, double fall_exp = 0.999,
                      double end_temp = 1e-32, int parallel = 5) {
     sol_info approx_si = time_first_fit(viv, max_berth, max_time);
     sol_info tmp_si;

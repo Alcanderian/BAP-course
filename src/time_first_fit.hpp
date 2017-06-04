@@ -5,9 +5,12 @@
 #include "sol_info.hpp"
 #include "vessel_info.hpp"
 
+using namespace std;
+
 void time_first_fit_one_step(sol_info &si, sol_map &sm, int vi_idx) {
     vessel_info vi = si.vessel[vi_idx];
-
+    si.start_berth[vi_idx] = -1;
+    si.start_time[vi_idx] = -1;
     for (int j = vi.arri_time; j + vi.serv_time <= sm.time_axis; ++j) {
         for (int i = 0; i + vi.berth <= sm.berth_axis; ++i) {
             if (sm.try_alloc(i, vi.berth, j, vi.serv_time)) {
