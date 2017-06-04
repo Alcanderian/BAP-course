@@ -1,0 +1,6 @@
+seed: no seed
+pair(berth,time): 0,0;4,4;4,3;0,5;0,3
+total_wait_time: 8
+last_departure_time: 6
+unassigned_vessel: 0
+score: 22

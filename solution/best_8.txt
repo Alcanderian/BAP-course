@@ -1,0 +1,6 @@
+seed: 1496548139
+pair(berth,time): 0,0;0,12;9,7;5,2;3,10;4,12;0,9;0,7;3,9;4,7;8,7;6,10
+total_wait_time: 38
+last_departure_time: 16
+unassigned_vessel: 0
+score: 92
