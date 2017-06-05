@@ -11,5 +11,6 @@
 #include <fstream>
 #include <cstring>
 #include <sstream>
+#include <map>
 
 #endif //ALGOR_BERTH_ALLOCATION_STD_INC_HPP
